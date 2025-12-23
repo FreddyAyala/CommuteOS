@@ -206,7 +206,15 @@ Before writing code, we established the rules.
 
 ---
 
-# Part 5: Share It (GitHub Pages) 🚀
+# Part 5: Share It (Deployment) 🚀
+
+The final step of Vibecoding is shipping. Choose your fighter.
+
+### Option 1: GitHub Pages 🐱
+**Best for**: Static sites, zero cost, keeps everything in GitHub.
+
+1.  **Repo Setup**:
+    *   **Prompt**: *"Initialize a git repo and push it to a new GitHub repository called 'commute-os'."*
 
 The final step of Vibecoding is shipping.
 
@@ -252,10 +260,6 @@ Need to save data for real?
 Want to parse emails or PDFs?
 *   **Prompt**: *"Add a feature where I can paste a messy email about a meeting, and use Gemini Flash to extract the address and add it to my route."*
 *   **Result**: AI-powered data entry.
-
----
-
-    *   **Result**: AI-powered data entry.
 
 ---
 

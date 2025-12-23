@@ -58,5 +58,6 @@ src/
 
 ## 7. Deployment 🚀
 -   **Platform**: GitHub Pages
--   **Build Config**: `vite.config.ts` must include `base: '/repo-name/'` to handle subpath routing on GitHub.
--   **Process**: `npm run deploy` (via `gh-pages`).
+-   **Method**: GitHub Actions (CI/CD)
+-   **Config**: `.github/workflows/deploy.yml` auto-deploys on push to `main`.
+-   **Build Config**: `vite.config.ts` must include `base: '/CommuteOS/'`.

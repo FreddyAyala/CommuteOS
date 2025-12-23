@@ -210,32 +210,22 @@ Before writing code, we established the rules.
 
 The final step of Vibecoding is shipping. Choose your fighter.
 
-### Option 1: GitHub Pages 🐱
-**Best for**: Static sites, zero cost, keeps everything in GitHub.
+### Option 1: GitHub Pages (Automated via Actions) 🤖
+**Best for**: "Set it and forget it."
 
 1.  **Repo Setup**:
-    *   **Prompt**: *"Initialize a git repo and push it to a new GitHub repository called 'commute-os'."*
-
-The final step of Vibecoding is shipping.
-
-### The "Deploy" Cycle
-We don't manually configure Webpack anymore. We ask the agent.
-
-1.  **Repo Setup**:
-    *   **Prompt**: *"Initialize a git repo and push it to a new GitHub repository called 'commute-os'."*
-    *   (You may need to authenticate `gh` CLI or paste the remote URL).
-
-2.  **Deployment**:
-    *   **Prompt**: *"Configure this Vite app for GitHub Pages deployment. Add a 'deploy' script using the `gh-pages` package."*
-    *   **Agent Action**: 
-        *   Installs `gh-pages`.
-        *   Updates `vite.config.ts` (sets `base: '/repo-name/'`).
-        *   Adds `npm run deploy` script.
-    *   **Troubleshooting**: If you see a blank page, ensure `vite.config.ts` has `base: '/your-repo-name/'`.
+    *   **Prompt**: *"Create a GitHub Actions workflow to deploy this Vite app to GitHub Pages on every push to main."*
+    *   **Agent Action**: Creates `.github/workflows/deploy.yml`.
     
-3.  **The Launch**:
-    *   **User Action**: Run `npm run deploy`.
-    *   **Result**: Your app is live at `https://your-username.github.io/commute-os`.
+2.  **Enable It**:
+    *   Go to GitHub Repo -> Settings -> Pages.
+    *   Set Source to **GitHub Actions**.
+    *   Push your code. Done.
+
+### Option 2: GitHub Pages (Manual) ✋
+**Best for**: Quick tests without CI/CD.
+1.  **Prompt**: *"Add a deploy script for gh-pages."*
+2.  **Run**: `npm run deploy`.
 
 ---
 

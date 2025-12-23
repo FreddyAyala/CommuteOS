@@ -80,10 +80,13 @@ CommuteOS relies entirely on live public APIs. No API keys are required for the 
     ```
 
 4.  **Deploy to GitHub Pages**
-    ```bash
-    npm run deploy
-    ```
-    *(Ensure `base` path is set in `vite.config.ts` first)*
+    
+    We use **GitHub Actions** for auto-deployment.
+    1.  Push to `main`: `git push origin main`
+    2.  Go to Repo Settings -> Pages.
+    3.  Set Source to **GitHub Actions**.
+    
+    *(The workflow in `.github/workflows/deploy.yml` handles the rest)*
 
 ## 📂 Project Structure
 

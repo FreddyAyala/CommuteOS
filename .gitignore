@@ -121,3 +121,4 @@ dist-ssr
 
 # MacOS
 .DS_Store
+package-lock.json

@@ -55,3 +55,8 @@ src/
 ├── App.tsx           # Main Dashboard Layout
 └── main.tsx          # Entry Point
 ```
+
+## 7. Deployment 🚀
+-   **Platform**: GitHub Pages
+-   **Build Config**: `vite.config.ts` must include `base: '/repo-name/'` to handle subpath routing on GitHub.
+-   **Process**: `npm run deploy` (via `gh-pages`).

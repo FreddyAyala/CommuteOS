@@ -229,8 +229,9 @@ We don't manually configure Webpack anymore. We ask the agent.
     *   **Prompt**: *"Configure this Vite app for GitHub Pages deployment. Add a 'deploy' script using the `gh-pages` package."*
     *   **Agent Action**: 
         *   Installs `gh-pages`.
-        *   Updates `vite.config.ts` (sets `base` path).
+        *   Updates `vite.config.ts` (sets `base: '/repo-name/'`).
         *   Adds `npm run deploy` script.
+    *   **Troubleshooting**: If you see a blank page, ensure `vite.config.ts` has `base: '/your-repo-name/'`.
     
 3.  **The Launch**:
     *   **User Action**: Run `npm run deploy`.

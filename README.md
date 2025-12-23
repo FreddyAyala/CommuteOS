@@ -76,10 +76,14 @@ CommuteOS relies entirely on live public APIs. No API keys are required for the 
     npm run dev
     ```
 
-3.  **Build for Production**
-    ```bash
     npm run build
     ```
+
+4.  **Deploy to GitHub Pages**
+    ```bash
+    npm run deploy
+    ```
+    *(Ensure `base` path is set in `vite.config.ts` first)*
 
 ## 📂 Project Structure
 

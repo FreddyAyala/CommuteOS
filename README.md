@@ -9,8 +9,8 @@ graph TD
     User((User))
     subgraph "Frontend Application (React + Vite)"
         UI[UI Components]
-        Store[State Store (useAppStore)]
-        API[API Service (lib/api.ts)]
+        Store["State Store (useAppStore)"]
+        API["API Service (lib/api.ts)"]
     end
     
     subgraph "External Public APIs"
